@@ -1,0 +1,17 @@
+
+footer {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color:black;
+    text-align: center;
+    position: fixed;
+    top: 95vh;
+    z-index: 1;
+    }
+
+    footer .Footer p
+    {
+    	color: white;
+    }
+

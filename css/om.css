@@ -1,0 +1,121 @@
+html
+{
+    overflow-x: hidden;
+}
+body
+{
+    background-color: #f1f1f1;
+}
+.wrapper
+{
+    background-color: #f1f1f1;
+}
+.upper
+{
+    overflow-x: scroll;
+    min-height: auto;
+    padding: 2% 0% 1% 3%;
+    background-color: #f1f1f1;
+    transition: 0.3s ease;
+}
+.upper:hover
+{
+    box-shadow: 1px 1px 7.5px #3E92CC;
+}
+.upper::-webkit-scrollbar
+{
+    background-color: white;
+}
+.upper::-webkit-scrollbar-thumb
+{
+    height: 10px;
+  background: gray;
+  border-top-right-radius:10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+/* Table css */
+.table {
+    width:auto;
+}
+.th, .td ,.tr
+{
+    padding: 10px 10px;
+    text-align: left;
+}
+.th{
+    background-color: rgb(62, 146, 224);
+    border: 1px solid black;
+}
+.td
+{
+    width :250px;  /*Check this out! */
+}
+/* Table which shouldn't be displayed */
+tr:not(.tr),td:not(.td),th:not(.th)
+{
+    border-collapse: collapse!important;
+    padding: 10px;
+    border: 1px solid black;
+    /*width: auto;*/
+}
+tr:not(.tr)
+{
+    background-color:#f1f1f1;
+}
+tr:not(.tr):hover
+{
+    background-color: white;
+}
+th:not(.th)
+{
+    width: auto;
+    background-color: lightblue;
+}
+
+input,select{
+    border: 1px solid black;
+}
+textarea,select
+{
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 2px;
+    resize :none;
+}
+
+
+/* Valid-Invalid color changer */
+input:valid
+{
+    color:green;
+}
+
+input:invalid
+{
+    color: red;
+}
+
+/* Button */
+input[type="submit"],button{
+    color:white;
+}
+
+/* Title */
+.titleofpage{
+    font-weight: bold;
+    font-size: 24px;
+    font-style: bold;
+    text-align: center;
+}
+
+/* Label css */
+label,h4{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-family: 'Bree Serif', serif;
+}
+span{
+    font-family: 'Roboto', sans-serif; 
+}

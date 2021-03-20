@@ -1,0 +1,20 @@
+.validation_section
+	{   
+		margin-top: 1%;
+		padding: 10px;
+		margin-left:21.5%; 
+		width:77%;
+		border:1px solid black;
+		height: auto;
+	}
+	@media screen and (max-width: 768px)
+	{
+		.validation_section
+		{
+			margin-left: 2%;
+			width: 96%;
+		}
+	}
+/*for jquery alert*/
+
+.alert{display: none;color:red;}

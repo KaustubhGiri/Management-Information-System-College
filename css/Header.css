@@ -1,0 +1,157 @@
+
+*, *::before, *::after {box-sizing:border-box}
+html, body {padding:0; margin:0}
+body {min-height:100%}
+
+header {
+
+  height: 100px;
+  position: sticky;
+  top: -16px; 
+  z-index: 1;
+  color: white;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+
+header::after {
+  content: '';
+  display: block;
+  height: 16px;
+  position: sticky;
+   box-shadow: 0px 5px 10px black;
+}
+
+header::before {
+  box-shadow: 0px 20px 10px black;
+}
+
+.side
+{
+  transition: 0.2s;
+    margin:13px;
+    border-radius: 5px;
+    padding: 5px;
+    background: #3E92CC;
+}
+.side:hover
+{
+  background-color: blue; 
+}
+header::after {
+  background: linear-gradient(white 10%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.4) 70%, transparent);
+  top: 10;
+  z-index: 2;
+}
+.header_div{
+  text-align:center;
+}
+.header_div {
+  background: #0B3954;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  margin-top: -16px;
+  z-index: 3;
+  color:white;
+}
+.small_header{
+  color: pink;
+  font-size: 1.4em;
+  display: none;
+  position: fixed;
+  top: 3.5%;
+  left: 50%;
+}
+.big_header{
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 3.5%;
+}
+.btn
+{
+  margin: 20px;
+}
+.logout
+{
+  position: fixed;
+  left: 80%;
+  top: 3.5%;
+}
+@media screen and (max-width: 760px){
+  .big_header{
+    display: none;
+  }
+  .small_header{
+    display: block;
+    margin-left: -5%;
+    top: 5%;
+   color: white;
+  }
+  .logout
+  {
+    left: 75%;
+    top: 5%;
+  }
+}
+
+.img{
+  border:2px solid white;
+      border-radius: 50%;
+      height :70px;
+      width :70px;
+      margin:20px;          
+    }
+
+#hea_log{
+      background-color: #0B3954;
+      height: auto;
+      display: none;
+      position: fixed;
+      width:15%;
+      box-shadow: 0 10px 20px black;
+      padding:10px;
+      color:white;
+    }
+    .hea_log_img_icon{
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    border:2px solid white;
+    border-radius: 3px;
+}
+p
+{
+  color: white;
+}
+
+#hea_log button{
+  padding:5px 10px 5px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(214, 28, 28);
+}
+.hea_log_chg_pass
+{
+  background-color: rgb(236, 175, 44)!important;
+  margin-bottom: 10px;
+  color: white;
+}
+@media screen and (max-width:768px )
+{
+  #hea_log
+ {
+  margin-top: 0px;
+  width: 40%;
+  height: auto;
+  right: 0;
+ } 
+}
+.img1{
+  height: 35px;
+  width: 35px;
+}
